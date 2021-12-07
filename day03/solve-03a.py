@@ -46,7 +46,7 @@ for [a, b] in dataset:
     else:          # More 1s than 0s in this bit position
         gamrate = 2 * gamrate + 1
         epsrate = 2 * epsrate
-        
+
 
 # *** Print Answer ***
 
