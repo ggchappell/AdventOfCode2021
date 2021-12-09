@@ -4,13 +4,14 @@
 
 import sys          # .stdin, .argv
 import re           # .search
-import itertools    # .count, .combinations, .permutations, .chain,
-                    #  .product
+import itertools    # .count, .chain, .product,
+                    #  .combinations, .permutations
 import copy         # .deepcopy
 import collections  # .defaultdict
 import os           # .system
 import time         # .sleep
 import functools    # .reduce
+import queue        # .SimpleQueue
 
 
 # ======================================================================
