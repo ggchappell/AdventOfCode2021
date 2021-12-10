@@ -11,7 +11,7 @@ import collections  # .defaultdict
 import os           # .system
 import time         # .sleep
 import functools    # .reduce
-import queue        # .SimpleQueue
+import queue        # .SimpleQueue, .LifoQueue
 
 
 # ======================================================================
