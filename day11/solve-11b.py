@@ -2,7 +2,7 @@
 # Advent of Code 2021
 # Glenn G. Chappell
 
-import sys          # .stdin
+import sys          # .stdin, .argv
 import itertools    # .product, .count
 
 
