@@ -22,6 +22,7 @@ def apply_rules(s_in, rules):
         s_out += s_in[i+1]
     return s_out
 
+
 def least_most(ss):
     quants = collections.defaultdict(int)
     for c in ss:

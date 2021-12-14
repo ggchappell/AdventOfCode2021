@@ -22,6 +22,7 @@ def list2pairs(t):
         pairs[cc] += 1
     return pairs
 
+
 def apply_rules(pp_in, rules):
     pp_out = collections.defaultdict(int)
     for cc in pp_in:
@@ -35,6 +36,7 @@ def apply_rules(pp_in, rules):
         else:
             pp_out[cc] += pp_in[cc]
     return pp_out
+
 
 def least_most(pp):
     # The number of times a letter appears is the number of times a pair
