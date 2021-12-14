@@ -38,19 +38,15 @@ def apply_rules(pp_in, rules):
 
 def least_most(pp):
     # The number of times a letter appears is the number of times a pair
-    # holding it appears, plus 1 if the letter is the first or last in
-    # the template, divided by 2. This should be the same as the number
-    # of times a pait containing it appears, rounded up to the nearest
-    # even integer, divided by 2.
+    # holding it appears (plus 1 if the letter is the first or last in
+    # the template) divided by 2. This is 1 plus the number of times a
+    # pair containing it appears, all divided by 2 (integer division).
     quants = collections.defaultdict(int)
     for cc in pp:
         quants[cc[0]] += pp[cc]
         quants[cc[1]] += pp[cc]
     for cc in quants:
-        q = quants[cc]
-        if q % 2 == 1:
-            q += 1
-        quants[cc] = q // 2
+        quants[cc] = (1 + quants[cc]) // 2;
     c1 = min(quants, key = (lambda c: quants[c]))
     c2 = max(quants, key = (lambda c: quants[c]))
     return c1, quants[c1], c2, quants[c2]
