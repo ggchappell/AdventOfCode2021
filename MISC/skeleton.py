@@ -12,6 +12,7 @@ import os           # .system
 import time         # .sleep
 import functools    # .reduce
 import queue        # .SimpleQueue, .LifoQueue
+import heapq        # .heappop, .heappush
 
 
 # ======================================================================
