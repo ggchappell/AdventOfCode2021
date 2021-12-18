@@ -13,6 +13,7 @@ import time         # .sleep
 import functools    # .reduce
 import queue        # .SimpleQueue, .LifoQueue
 import heapq        # .heappop, .heappush
+import ast          # .literal_eval
 
 
 # ======================================================================
