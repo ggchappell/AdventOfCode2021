@@ -29,20 +29,25 @@ import ast          # .literal_eval
 # ======================================================================
 
 
-# *** Process Input ***
+def main():
+    # *** Process Input ***
 
-dataset = []
-for line in sys.stdin:
-    line = line.rstrip()
-    # ...
-    dataset.append(42)
+    dataset = []
+    for line in sys.stdin:
+        line = line.rstrip()
+        # ...
+        dataset.append(42)
 
-# *** Do Computation ***
+    # *** Do Computation ***
 
-result = 42
+    result = 42
 
-# *** Print Answer ***
+    # *** Print Answer ***
 
-#print("-" * 60)
-print(f"Answer: {result}")
+    #print("-" * 60)
+    print(f"Answer: {result}")
+
+
+if __name__ == "__main__":
+    main()
 
